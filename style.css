@@ -1,0 +1,59 @@
+/*
+Theme Name: Simons Blog Theme
+Theme URI: http://finnes.ikke.no
+Description: Torkel tester ut hvordan man lager Wordpress-themes
+Version: 0.1 alpha
+Author: Torkel Bjørnson-Langen <torkel@normal.no>
+Author URL: https://github.com/torbjo
+Tags:
+*/
+
+body {
+  /*
+  text-align: center;
+  */
+}
+
+#wrapper {
+  display: block;
+  width:90%;
+  margin:0px auto;
+  border: 1px #a2a2a2 solid;
+}
+
+#header {
+  border: 2px #a2a2a2 solid;
+}
+
+#main {
+  border: 1px dashed blue;
+}
+
+#content {
+  width: 75%;
+  float: left;
+  border: 2px #a2a2a2 solid;
+}
+
+#sidebar {
+  width: 23%;
+  float: right;
+  border: 2px #a2a2a2 solid;
+}
+
+#delimiter { clear: both; }
+
+#footer {
+  border: 2px #a2a2a2 solid;
+}
+
+/* @todo move to classes.css? */
+
+.title {
+  border: 1px solid red;
+  /*
+  font-size: 11pt;
+  font-family: verdana;
+  font-weight: bold;
+  */
+}
