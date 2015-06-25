@@ -1,11 +1,8 @@
 <?php get_header(); ?>
 <div id="main">
-
-  <p>What to put here?</p>
-
   <div id="content">
 
-    <h1>Main Area</h1>
+    <?php include ('main.php'); ?>
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <h2><?php the_title(); ?></h2>

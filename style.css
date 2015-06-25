@@ -22,23 +22,20 @@ body {
 }
 
 #header {
-  border: 2px #a2a2a2 solid;
+  border-bottom: 1px solid darkgreen;
 }
 
 #main {
-  border: 1px dashed blue;
 }
 
 #content {
   width: 75%;
   float: left;
-  border: 2px #a2a2a2 solid;
 }
 
 #sidebar {
   width: 23%;
   float: right;
-  border: 2px #a2a2a2 solid;
 }
 
 #delimiter { clear: both; }

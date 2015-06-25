@@ -1,6 +1,6 @@
-<div id="footer">
+<footer id="footer">
   <h1>FOOTER</h1>
-</div>
+</footer>
 
 </div>	<!-- div#wrapper (header.html) -->
 </body>
