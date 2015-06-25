@@ -2,6 +2,8 @@
   <h1>FOOTER</h1>
 </footer>
 
-</div>	<!-- div#wrapper (header.html) -->
+<?php wp_footer(); ?>
+
+</div>	<!-- div#wrapper (header.php) -->
 </body>
 </html>

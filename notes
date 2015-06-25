@@ -1,0 +1,11 @@
+https://wordpress.org/plugins/facebook-posts-embedded/
+https://wordpress.org/plugins/wp-embed-facebook/
+
+
+Can use graph api to fetch last 5 posts from simon on the
+normalnorway page, and embed them.
+https://developers.facebook.com/docs/graph-api/reference/page/feed/
+https://www.facebook.com/simon.osen
+https://www.facebook.com/NormalNorway
+
+Q: Can fetch page messages with graph api?

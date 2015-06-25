@@ -1,0 +1,16 @@
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Simon Osens Blogg</title>
+
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+    <![endif]-->
+
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<meta property="og:image" content="/path/to/image.png"/>
+
+<link href="style/reset.css" rel="stylesheet" type="text/css">
+
+Q: Can use relative path? instead of bloginfo ('stylesheet_url')?
+<link href="style/style.css" rel="stylesheet" type="text/css">

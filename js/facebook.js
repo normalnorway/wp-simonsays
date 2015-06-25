@@ -8,8 +8,7 @@ window.fbAsyncInit = function() {
 	xfbml      : true,
 	version    : 'v2.3',
     });
-
-//    foo();
+    // Add extra init code here
 };
 
 function fb_feed()
@@ -43,7 +42,7 @@ function fb_share ()
     });
 }
 
-
+/*
 (function(d, s, id){
    var js, fjs = d.getElementsByTagName(s)[0];
    if (d.getElementById(id)) {return;}
@@ -51,3 +50,4 @@ function fb_share ()
    js.src = "//connect.facebook.net/nb_NO/sdk.js";
    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+*/

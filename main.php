@@ -1,51 +1,35 @@
-<div class="fb-root">
-<!--
-<div 
-  class="fb-like"
-  data-width="450"
-  data-share="true"
-  data-show-faces="true">
-</div>
--->
 
-<p>
-  <button onclick="foo()">Click me</button>
-</p>
+<?php while (have_posts()) : the_post(); ?>
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<div class="fb-like"></div>
-<br />
+  <div class="post-header">
+    <h2><a href="<?php the_permalink(); ?>" rel="bookmark"
+	   title="Permanent Link to <?php the_title_attribute(); ?>">
+      <?php the_title(); ?></a>
+    </h2>
+    <div class="date"><?php the_time ('Y-m-d'); ?></div>
+    <div class="author">Author: <?php the_author(); ?></div>
+  </div>
 
-<hr>
+  <div class="entry clear">
+    <?php if (function_exists ('add_theme_support')) the_post_thumbnail(); ?>
+    <?php edit_post_link(); ?>
+    <?php wp_link_pages(); ?>
+    <!--
+    <?php the_content(); ?>
+    -->
+  </div>
 
-<!-- box_count, button, icon_link, icon, link -->
-<div
-  class="fb-share-button"
-  data-href="http://simon.normal.no"
-  data-layout="button_count">
-</div>
+  <footer class="post-footer">
+    <div class="comments"><?php comments_popup_link ('Leave a Comment', '1 Comment', '% Comments'); ?></div>
+  </footer>
 
-&nbsp;
+</div>	<!-- div#post-<id> -->
+<?php endwhile; ?>
 
-<div class="fb-send"></div>
+<nav class="navigation index">
+  <div class="alignleft"><?php next_posts_link ('Older Entries'); ?></div>
+  <div class="alignright"><?php previous_posts_link ('Newer Entries'); ?></div>
+</nav>
 
-<br />
-<br />
-<br />
-
-<!--
-Embed post.
-
-Can use graph api to fetch last 5 posts from simon on normalnorway page
-and embed them here.
-https://developers.facebook.com/docs/graph-api/reference/page/feed/
-https://www.facebook.com/simon.osen
-https://www.facebook.com/NormalNorway
-
-Q: can fetch page messages with graph api?
-
-@note can not set width from css
--->
-<div class="fb-post" data-width="500"
-  data-href="https://www.facebook.com/NormalNorway/posts/744693948973039"></div>
-
-</div>	<!-- div.fb-root -->
+<!-- @todo if (!have_posts()) -->
