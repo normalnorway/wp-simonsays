@@ -1,3 +1,15 @@
+
+    <title><?php wp_title ('|', true, 'right'); ?></title>
+    <title><?php bloginfo('name'); ?></title>
+
+
+
+
+<html lang="nb">
+<html <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Simon Osens Blogg</title>

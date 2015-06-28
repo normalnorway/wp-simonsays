@@ -1,28 +1,26 @@
-<!--
-<div 
-  class="fb-like"
-  data-width="450"
-  data-share="true"
-  data-show-faces="true">
-</div>
--->
+<div class="comments"><?php comments_popup_link ('Leave a Comment', '1 Comment', '% Comments'); ?></div>
 
-<button onclick="foo()">Click me</button>
+    <h2><a href="<?php the_permalink(); ?>" rel="bookmark"
+	   title="Permanent Link to <?php the_title_attribute(); ?>">
+        <?php the_title(); ?></a></h2>
 
-<div class="fb-like"></div>
+    <div class="date"><?php the_time ('Y-m-d'); ?></div>
+    <div class="author">Author: <?php the_author(); ?></div>
 
-<!-- box_count, button, icon_link, icon, link -->
-<div
-  class="fb-share-button"
-  data-href="http://simon.normal.no"
-  data-layout="button_count">
-</div>
+    <?php the_category(); ?>
 
-<div class="fb-send"></div>
+    <?php if (function_exists ('add_theme_support')) the_post_thumbnail(); ?>
 
-<!--
-Embed one post
-@note can not set width from css
--->
-<div class="fb-post" data-width="500"
-  data-href="https://www.facebook.com/NormalNorway/posts/744693948973039"></div>
+    <?php edit_post_link(); ?>
+
+    <?php wp_link_pages(); ?>
+
+
+
+
+<nav class="navigation index">
+  <div class="alignleft"><?php next_posts_link ('Older Entries'); ?></div>
+  <div class="alignright"><?php previous_posts_link ('Newer Entries'); ?></div>
+</nav>
+
+<!-- @todo if (!have_posts()) -->

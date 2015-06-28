@@ -3,10 +3,29 @@
 
   <p>
   Takk for at du besøker bloggen min! Dette er et nettsted for debatt og
-  utveksling av ideer. Her deler jeg mitt og Normals syn på norsk
-  ruspolitikk. Følg meg også på Facebook og Instagram, hvor jeg prøver å
+  utveksling av ideer. Her deler jeg mitt og <a href="http://normal.no/">
+  Normals</a> syn på norsk ruspolitikk. Følg meg gjerne på
+  <a href="https://www.facebook.com/simon.osen">Facebook</a> og
+  <a href="https://disqus.com/by/simonosen/">Disqus</a>, hvor jeg prøver å
   gi små innblikk i hverdagen som ruspolitisk reformist.
   </p>
+
+  <!--
+  <div class="fb-like" data-width="260" data-href="/"></div>
+  -->
+  <div class = "fb-like"
+       style="float:right"
+       data-href = "/"
+       data-action = "recommend"
+       data-layout = "button_count"
+       data-width = "260"
+       data-show-faces = "false"
+       data-share = "false">
+  </div>
+  <br />
+
+  <br />
+  <img src="<?php echo get_template_directory_uri(); ?>/images/simon-mm15.jpg" />
 
   <h4>Facebook</h4>
 
@@ -18,7 +37,6 @@
   https://developers.facebook.com/docs/plugins/page-plugin/
   -->
 
-
   <h4>Ruspolitiske blogger</h4>
   <ul>
     <li><a href="http://blogg.normal.no">Normal</a>
@@ -26,16 +44,22 @@
     <li><a href="http://minagerhardsen.blogg.no">Mina Gerhardsen</a>
   </ul>
 
+  <!--
   <h4>Arkiv</h4>
-  <p>TODO</p>
+  -->
 
   <h4>Kontakt</h4>
-  <p>TODO</p>
+  <p>Kontakt meg gjerne via <a href="mailto:simon@normal.no">e-post</a> eller
+  send meg en melding på <a href="https://www.facebook.com/simon.osen">
+  Facebook</a>.</p>
 
   <h4>Sider</h4>
   <ul>
     <li><a href="/om-meg/">Om meg</a>
     <li><a href="/wp-admin/">Logg inn</a>
   </ul>
+
+  <br />
+  <img src="<?php echo get_template_directory_uri(); ?>/images/simon1.jpg" />
 
 </div>

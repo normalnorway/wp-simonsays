@@ -9,3 +9,12 @@ https://www.facebook.com/simon.osen
 https://www.facebook.com/NormalNorway
 
 Q: Can fetch page messages with graph api?
+
+
+# wp_enqueue_scripts
+Of course if you’re creating a theme for someone else, then you really
+should load your js files with wp_enqueue_scripts.
+http://www.wpexplorer.com/javascript-wordpress/
+
+
+

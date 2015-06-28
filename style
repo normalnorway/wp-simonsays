@@ -1,0 +1,5 @@
+
+// will also kick in on the frontpage
+#content .post .entry p:first-child {
+  font-weight: bolder;
+}
